@@ -96,7 +96,7 @@ public class ProductImageController {
 	public String list(int pid, Model model){
 		Product p = productService.get(pid);
 		List<ProductImage> pisSingle = productImageService.list(pid, ProductImageService.type_single);
-		List<ProductImage> pisDetail = productImageService.list(pid, productImageService.type_detail);
+		List<ProductImage> pisDetail = productImageService.list(pid, ProductImageService.type_detail);
 		model.addAttribute("p", p);
 		model.addAttribute("pisSingle", pisSingle);
 		model.addAttribute("pisDetail", pisDetail);
